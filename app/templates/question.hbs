@@ -3,17 +3,12 @@
 {{question.qbody}}
 {{question.qnotes}}
 {{question-detail question=model}}<br>
-
-
-
 <h2>Give it to them straight.</h2>
-
-
 <ul>
-{{#each model.answers as |answer|}}
+  {{#each model.answers as |answer|}}
   <li>
     <p id="quests">{{answer.qreply}}</p> <p id="quests"> -By: {{answer.master}}</p>
-      {{update-answer answer=answer update="update" }}<br>
+    {{update-answer answer=answer update="update" }}<br>
     <button {{action 'delete' answer}}>Delete</button>
   </li>
   {{/each}}

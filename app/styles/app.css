@@ -10,8 +10,6 @@ body {
 
 h2 {
   font-size: 50px;
-
-
 }
 
 footer {
@@ -25,6 +23,7 @@ footer {
 
 #foot {
   font-size: 16px;
+
 }
 
 #facebook {
@@ -33,7 +32,6 @@ footer {
   right: 11%;
   top: 50px;
 }
-
 
 #linkedin {
   width: 2%;

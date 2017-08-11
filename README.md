@@ -20,10 +20,12 @@ This App will allow users to post a question in a forum style page. Additional u
   * Html page for all questions
   * Html page for add or edit of questions
   * Html page for individual question and  answers
-  
+
 4: UX/UI
   * Header with navbar links on all pages
 
+5: Polish
+  * clean-up
 
 ## Prerequisites
 
