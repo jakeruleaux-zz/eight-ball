@@ -15,7 +15,7 @@ export default Ember.Component.extend({
        qnotes: this.get('qnotes')
      };
      this.set('addNewQuestion', false);
-     this.sendAction('saveQuestion2', params);
+     this.sendAction('saveQuestion', params);
    }
  }
 });
