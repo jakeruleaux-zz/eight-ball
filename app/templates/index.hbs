@@ -2,9 +2,9 @@
 
 <h2>All the answers to life's pressing questions!</h2>
 
-<h2>Questions:</h2>
+<br><h2>Questions:</h2>
 <ul>
   {{#each model.questions as |question|}}
-    {{question-tile question=question}}
+    <p id="quests">{{question-tile question=question}}</p>
     {{/each}}
 </ul>

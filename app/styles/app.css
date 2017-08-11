@@ -3,14 +3,13 @@
   color: white;
 }
 
-/*body {
-  background-image: url("http://www.1ksmiles.com/wp-content/uploads/2014/08/magic-8-ball-yes.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
+body {
+  background-color: rgb(219, 231, 249);
+}
 
 h2 {
-  color: white;
+  font-size: 50px;
+
 
 }
 
@@ -44,4 +43,9 @@ footer {
 
 li {
   list-style: none;
+}
+
+#quests {
+  font-size: 26px;
+  padding-left: 100px;
 }
