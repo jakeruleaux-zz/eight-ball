@@ -4,7 +4,7 @@
 
 <h2>Questions:</h2>
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question}}
     {{/each}}
 </ul>
@@ -13,6 +13,8 @@
 
 <ul>
   {{#each model.answers as |answer|}}
+  <li>
   {{answer.qreply}} -By {{answer.master}}
+  </li>
   {{/each}}
 </ul>
