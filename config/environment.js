@@ -18,7 +18,7 @@ module.exports = function(environment) {
       }
     },
 
-    firebase: = {
+    firebase: {
       apiKey: "AIzaSyA_t9NYSBOk796qUbV-ZUQF-C4Hl2v29SQ",
       authDomain: "eight-ball-35ad8.firebaseapp.com",
       databaseURL: "https://eight-ball-35ad8.firebaseio.com",
