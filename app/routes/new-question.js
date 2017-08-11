@@ -22,14 +22,11 @@ export default Ember.Route.extend({
     this.transitionTo('new-question');
     },
 
-    destroyQuestion(question) {
-      var answer_deletions = question.get('answers').map(function(answer) {
-        return answer.destroyRecord();
-      });
-      Ember.RSVP.all(answer_deletions).then(function() {
-        return question.destroyRecord();
-      });  
-     this.transitionTo('new-question');
+    delete(question) {
+      if (confirm('Are you sure you want to delete this question?')) {
+        question.destroyRecord();
+        this.transitionTo('new-question');
+        }
+      }
     }
-    }
-    });
+});
