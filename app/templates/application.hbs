@@ -1,12 +1,36 @@
-<div class= "container">
-            {{#link-to 'contact'}}Contact{{/link-to}}<br>
-            {{#link-to 'about'}}About{{/link-to}}<br>
-            {{#link-to 'new-question'}}Ask!{{/link-to}}<br>
-            {{#link-to 'index'}}Home{{/link-to}}
-            {{outlet}}
 
-            <footer>
 
-            </footer>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      </div>
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        {{#link-to 'contact'}}Contact{{/link-to}}<br>
+        {{#link-to 'about'}}About{{/link-to}}<br>
+        {{#link-to 'new-question'}}Ask!{{/link-to}}<br>
+        {{#link-to 'index'}}Home{{/link-to}}
+      </ul>
+      <h1 id="ball">8-ball</h1>
+      <li class="nav-item">
+         <a class="nav-link" href="https://en-gb.facebook.com/login/"><img  src="https://wantoo.io/static/landingpage/img/icon_facebook.svg" alt="facebook" id='facebook' ></a>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/uas/login"><img  src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png" alt="linkedin" id='linkedin' ></a>
+        </li>
+      </div>
+</nav>
 
-</div>
+
+<body>
+  <div class= "container">
+    {{outlet}}
+
+    <footer>
+      <p id="foot">Copyright 8-ball INC</p>
+    </footer>
+
+  </div>
+
+</body>
