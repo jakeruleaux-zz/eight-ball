@@ -16,12 +16,6 @@ export default Ember.Component.extend({
      };
      this.set('addNewQuestion', false);
      this.sendAction('saveQuestion2', params);
-   },
-
-   delete(question) {
-     if (confirm('Are you sure you want to delete this question?')) {
-       this.sendAction('destroyQuestion', question);
-     }
    }
  }
 });
