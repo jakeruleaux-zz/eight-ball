@@ -3,3 +3,25 @@
 {{question.qbody}}
 {{question.qnotes}}
 {{question-tile question=model}}<br>
+
+
+
+<h2>Give it to them straight.</h2>
+
+
+<ul>
+{{#each model.answers as |answer|}}
+  <li>
+    {{answer.qreply}} -By {{answer.master}}
+
+
+  </li>
+  {{/each}}
+</ul>
+
+
+
+
+
+
+{{new-answer saveAnswer="saveAnswer" question=model}}

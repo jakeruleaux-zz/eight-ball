@@ -10,6 +10,7 @@ export default Ember.Component.extend({
      var params = {
        master: this.get('master'),
        qreply: this.get('qreply'),
+       question: this.get('question')
      };
      this.set('addNewAnswer', false);
      this.sendAction('saveAnswer', params);
