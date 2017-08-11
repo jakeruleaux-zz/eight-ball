@@ -2,9 +2,17 @@
 
 <h2>All the answers to life's pressing questions!</h2>
 
-
+<h2>Questions:</h2>
 <ul>
   {{#each model as |question|}}
     {{question-tile question=question}}
     {{/each}}
+</ul>
+
+<h2>Answers:</h2>
+
+<ul>
+  {{#each model.answers as |answer|}}
+  {{answer.qreply}} -By {{answer.master}}
+  {{/each}}
 </ul>

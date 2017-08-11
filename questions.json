@@ -16,5 +16,12 @@
     "qbody": "is it?",
     "qnotes": "que?"
 
-  }]
+  }],
+  "answers": [{
+    "master": "Bob Ross",
+    "qreply": "Youre doomed"
+  }, {
+    "master": "Andy Warhol",
+    "qreply": "Youre dumb"
+    }]
 }
