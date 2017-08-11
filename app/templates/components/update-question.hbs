@@ -1,0 +1,29 @@
+{{#if updateQuestionForm}}
+  <h1>Edit</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="grasshopper">Name</label>
+        {{input value=grasshopper id="grasshopper"}}
+      </div>
+
+      <div class="form-group">
+        <label for="qtitle">Title</label>
+        {{input value=qtitle id="qtitle"}}
+      </div>
+
+      <div class="form-group">
+        <label for="qbody">Details</label>
+        {{input value=qbody id="qbody"}}
+      </div>
+
+      <div class="form-group">
+        <label for="qnotes">Additional Notes</label>
+        {{input value=qnotes id="qnotes"}}
+      </div>
+      <button {{action 'update' question}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateQuestionForm'}}>Edit</button>
+{{/if}}

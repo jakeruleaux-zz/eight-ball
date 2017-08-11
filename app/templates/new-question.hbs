@@ -1,1 +1,15 @@
-{{outlet}}
+<h2>Ask away</h2>
+
+<ul>
+  {{#each model as |question|}}
+  <li>
+    {{update-question question=question update="update" }}
+    {{question-tile question=question destroyQuestion="destroyQuestion"}}
+    <button {{action 'delete' question}}>Delete</button>
+  </li>
+  {{/each}}
+</ul>
+
+{{new-question saveQuestion="saveQuestion"}}
+
+{{#link-to 'index'}}Home{{/link-to}}
