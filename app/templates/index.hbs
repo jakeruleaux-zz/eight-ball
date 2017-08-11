@@ -2,6 +2,12 @@
 
 <h2>All the answers to life's pressing questions!</h2>
 
+<ul>
+  {{#each model as |question|}}
+     <li>{{question.grasshopper}}'s {{question.qtitle}}</li>
+  {{/each}}
+</ul>
+
 
 
 {{#link-to 'about'}}About{{/link-to}}
