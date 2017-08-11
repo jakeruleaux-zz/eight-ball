@@ -13,8 +13,7 @@
 {{#each model.answers as |answer|}}
   <li>
     {{answer.qreply}} -By {{answer.master}}
-
-
+      {{update-answer answer=answer update="update" }}
     <button {{action 'delete' answer}}>Delete</button>
   </li>
   {{/each}}
