@@ -1,7 +1,29 @@
 # eight-ball
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# eight-ball App, 08/11/2017
+
+# By Jacob Ruleaux
+
+## Description
+This App will allow users to post a question in a forum style page. Additional users will be able to post responses to said question.
+
+## Planning
+
+1: Set-up new ember project file
+
+2: Specs
+  * spec 1: User1 can input question and name and have it displayed on html file
+  * spec 2: User1 can edit their question
+  * spec 3: User2 can click on User1's question and respond. response and name is displayed
+
+3: Integration
+  * Html page for all questions
+  * Html page for add or edit of questions
+  * Html page for individual question and  answers
+  
+4: UX/UI
+  * Header with navbar links on all pages
+
 
 ## Prerequisites
 
@@ -48,3 +70,9 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## License
+
+  MIT
+
+## Copyright 2017 Jacob Ruleaux   
