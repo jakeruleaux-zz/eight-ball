@@ -3,8 +3,8 @@
 <ul>
   {{#each model as |question|}}
   <li>
+    {{question-detail question=question destroyQuestion="destroyQuestion"}}
     {{update-question question=question update="update" }}
-    {{question-tile question=question destroyQuestion="destroyQuestion"}}
     <button {{action 'delete' question}}>Delete</button>
   </li>
   {{/each}}

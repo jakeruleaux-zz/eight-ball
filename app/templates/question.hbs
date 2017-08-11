@@ -2,7 +2,7 @@
 {{question.qtitle}}
 {{question.qbody}}
 {{question.qnotes}}
-{{question-tile question=model}}<br>
+{{question-detail question=model}}<br>
 
 
 
@@ -15,13 +15,9 @@
     {{answer.qreply}} -By {{answer.master}}
 
 
+    <button {{action 'delete' answer}}>Delete</button>
   </li>
   {{/each}}
 </ul>
-
-
-
-
-
 
 {{new-answer saveAnswer="saveAnswer" question=model}}
